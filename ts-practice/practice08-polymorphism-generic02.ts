@@ -26,6 +26,7 @@ const ddd = superPrint7([1, false, true, "a"])
  * 
  * 그래서 내린 결론
  * unknown의 역할은 Generic에서 arg를 Optional느낌으로 유연하게 받아 처리할수있는 역할로서도 사용된다.
+ * 타입 유실되었거나 명확하게 지정되지 않아서 해당 값을 사용하기 위해선 타입 캐스팅 후 사용해야 한다는 의미
  */
 type SuperPrint8 = {
   <T, M>(arr: T[], b: M): T
