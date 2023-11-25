@@ -10,7 +10,7 @@ type Player10 = {
   health: Health
 }
 
-const nico4: Player10 = {
+const nico7: Player10 = {
   nickname: "nico",
   team: "blue", // 타입 선언시 입력한 선택지에 있는것만 가능
   health: 5 // 타입 선언시 입력한 선택지에 있는것만 가능
@@ -36,7 +36,7 @@ interface Player11 {
   health: Health
 }
 
-const nico5: Player11 = {
+const nico8: Player11 = {
   nickname: "nico",
   team: "blue", // 타입 선언시 입력한 선택지에 있는것만 가능
   health: 5 // 타입 선언시 입력한 선택지에 있는것만 가능
@@ -54,7 +54,7 @@ interface User {
 interface Player12 extends User {
 }
 
-const nico6: Player12 = {
+const nico9: Player12 = {
   name: "nico"
 }
 
@@ -72,7 +72,7 @@ type User2 = {
 type Player13 = User & {
 }
 
-const nico7: Player13 = {
+const nico10: Player13 = {
   name: "nico"
 }
 
@@ -93,7 +93,7 @@ interface User3 {
   health: number
 }
 
-const nico8: User3 = {
+const nico11: User3 = {
   name: "nico",
   lastname: "n",
   health: 1
