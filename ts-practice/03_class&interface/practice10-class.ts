@@ -8,7 +8,6 @@ class Player_j {
 } 
 */
 
-
 /**
  * 타입스크립트의 클래스 선언
  * 생성자 함수를 통해 필드를 초기화하는데,
@@ -27,6 +26,39 @@ const yooHyeok = new Player_T("유","혁","유혁스쿨");
 // yooHyeok.lastName = "last"
 yooHyeok.nickname = "nick"
 
+/**
+ * 매개변수 없는 인스턴스 생성을 위한 생성자 선언법
+ * new Instance(매개변수 없음)
+ * 필드를 바로 '' 혹은 0, [] {} 등으로 초기화해주기
+ */
+class Player_T2 {
+  //생성자 함수
+  constructor(
+    private firstName: string = '',
+    private lastName: string = '',
+    public nickname: string = ''
+  ) {}
+}
+const unknwon = new Player_T2()
+unknwon.nickname = '유혁스쿨'
+
+/**
+ * 클래스의 함수 선언
+ * 기본함수, static함수
+ */
+class FuncEx {
+
+  basicFunc() {
+    // 실행 블록
+    return null;
+  }
+  static staticBasicFunc() {
+    return null;
+  }
+}
+
+new FuncEx().basicFunc(); // 인스턴스 생성을 통한 접근만 가능
+FuncEx.staticBasicFunc(); //클래스 선언후 바로 접근 가능
 
 /**
  * 타입스크립트의 추상 클래스
