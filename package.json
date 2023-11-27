@@ -1,0 +1,22 @@
+{
+  "name": "ts-blockchain-app",
+  "version": "1.0.0",
+  "description": "타입스크립트로 블록체인 만들기\r * 타입스크립트 기본 학습",
+  "scripts": {
+    "build":"tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YooHyeok/ts-blockchain-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YooHyeok/ts-blockchain-app/issues"
+  },
+  "homepage": "https://github.com/YooHyeok/ts-blockchain-app#readme",
+  "devDependencies": {
+    "typescript": "^5.3.2"
+  }
+}
