@@ -66,5 +66,5 @@ a7.push(1)
 const a8: any[] = [1, 2, 3, 4]
 const b8: any = true
 
-let c5 = a+b; // 배열과 boolean타입을 더했는데 계산되어버린다.... any로 지정했기때문에...
+let c5 = a8+b8; // 배열과 boolean타입을 더했는데 계산되어버린다.... any로 지정했기때문에...
 console.log(c5); // "1, 2, 3, 4true"
