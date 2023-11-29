@@ -43,6 +43,25 @@ const unknwon = new Player_T2()
 unknwon.nickname = '유혁스쿨'
 
 /**
+ * 매개변수 없는 인스턴스 생성을 위한 생성자 선언법2
+ * new Instance(매개변수 없음)
+ * 타입을 지정한 필드 선언 후 constructor의 {중괄호}에서 this 키워드를 통해 필드에 접근하여 초기화한다.
+ */
+class Player_T3 {
+  private firstName: string
+  private lastName: string
+  public nickname: string
+  //생성자 함수
+  constructor() {
+    this.firstName = ''
+    this.lastName = ''
+    this.nickname = ''
+  }
+}
+const unknwon2 = new Player_T3()
+unknwon2.nickname = '유혁스쿨'
+
+/**
  * 클래스의 함수 선언
  * 기본함수, static함수
  */
