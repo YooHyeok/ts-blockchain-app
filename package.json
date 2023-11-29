@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "타입스크립트로 블록체인 만들기\r * 타입스크립트 기본 학습",
   "scripts": {
-    "build":"tsc"
+    "build": "tsc",
+    "start": "node build/index.js"
   },
   "repository": {
     "type": "git",
