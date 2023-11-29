@@ -5,9 +5,11 @@
     "target": "ES6", // target: 어떤 버전의 자바스크립트로 컴파일 하고 싶은지 설정 (node.js 버전과 호환되는 버전으로 설정해야한다.)
     "lib": [// lib: bundle(합쳐진) 정의 파일을 특정해주는 역할 - TypeScript는 처음부터 Dom API에 대한 정보를 가지고 있기 않기에, 이를 사용하기 위해 lib에서 유형을 정의해준다.
       "ES6", // ES6: 현재 코드가 어떤 버전으로 동작할지를 알려준다. (ES6를 지원하는 환경에서 실행된다.)
-       "DOM" // DOM: 브라우저 환경에서 실행된다. - 설정시 t/js파일이 document,localstroage, window등 브라우저 객체들을 지원하게 된다. (자동완성...)
+      //  "DOM" // DOM: 브라우저 환경에서 실행된다. - 설정시 t/js파일이 document,localstroage, window등 브라우저 객체들을 지원하게 된다. (자동완성...)
     ],
     "strict": true, // 타입스크립트로 부터 보호받을 수 있게 된다.
-    "allowJs": true, // 자바스크립트를 허용한다.
+    // "allowJs": true, // 자바스크립트를 허용한다. (타입스크립트와 자바스크립트를 함께 사용할 수 있게된다.)
+    "esModuleInterop": true, // export-import방식이 아닌 모듈에 대해서 허용...?
+    "module": "CommonJS"
   },
 }
