@@ -5,49 +5,69 @@
   - generic
   - class
   - interface
-> 터미널 명령어
-* `타입스크립트 빌드 및 컴파일 설정`
-    * [ node 프로젝트 디렉토리 초기화 명령어 ]
 
-      * npm init - y
+## `타입스크립트 프로젝트 빌드 및 컴파일 설정`
+<details>
+  <summary>[ 세팅 상세보기 ]</summary>
+  　    
 
-    * [ TypeScript모듈 설치 ]
+  * [ node 프로젝트 디렉토리 초기화 명령어 ]
+    ```
+    > npm init - y
+    ```
+    
 
-      * npm install -D typescript
+  * [ TypeScript모듈 설치 ]
+    ```
+    > npm install -D typescript
+    ```
 
-    * [ tsconfig.json 파일 생성 ]
+  * [ tsconfig.json 파일 생성 ]
 
-      * MacOS : touch tsconfig.json
-      * WinOS : code tsconfig.json
+    * MacOS 
+      ```
+      > touch tsconfig.json
+      ```
+    * WinOS
+      ```
+      > code tsconfig.json
+      ```
 
-    * [ 빌드 명렁어 ]
+  * [ 빌드 명렁어 ]
+      ```
+      > npm run build
+      ```
+  * [ 실행 명령어 ]
+      ```
+      > npm run start
+      ```
 
-      * npm run build
+  * [ 빌드 후 실행 명령어 ]
+      ```
+      > npm run build && npm start
+      ```
 
-    * [ 실행 명령어 ]
+  * `개발자 모드`
 
-      * npm run start
+      * [ TS NODE 설치 ]
+        ```
+        > npm i -D ts-node
+        ```
 
-    * [ 빌드 후 실행 명령어 ]
+      * nodemon 설치
+        ```
+        > npm i nodemon
+        ```
 
-      * MacOS : npm run build && npm start
-      * WinOS : npm run build && npm start
+  * `부록`
 
-* `개발자 모드`
-
-    * [ TS NODE 설치 ]
-
-      * npm i -D ts-node
-
-    * nodemon 설치
-
-      * npm i nodemon
-
-* `부록`
-
-    * [ JS NPM 패키지 TYPE declaration 다운 ]
-
-      * npm i -D @types/`패키지명`
+      * [ JS NPM 패키지 TYPE declaration 다운 ]
+        ```
+        > npm i -D @types/`패키지명`
+        ```
+</details>
+ <br/>
+ <hr/>
 
 
 
