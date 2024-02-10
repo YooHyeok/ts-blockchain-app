@@ -1,5 +1,5 @@
 {
-  "include": ["src"], // 타입스크립트 파일이 위치한 경로 - 자바스크립트로 컴파일 하고 싶은 모든 디렉터리를 넣는다.
+  "include": ["src", "src(declaration)", "src(jsdoc)", "ts-practice"], // 타입스크립트 파일이 위치한 경로 - 자바스크립트로 컴파일 하고 싶은 모든 디렉터리를 넣는다.
   "compilerOptions": {
     "outDir":"build", // outDir: 컴파일 된 자바스크립트 파일이 생성될 디렉토리 지정
     "target": "ES6", // target: 어떤 버전의 자바스크립트로 컴파일 하고 싶은지 설정 (node.js 버전과 호환되는 버전으로 설정해야한다.)
@@ -10,6 +10,7 @@
     "strict": true, // 타입스크립트로 부터 보호받을 수 있게 된다.
     // "allowJs": true, // 자바스크립트를 허용한다. (타입스크립트와 자바스크립트를 함께 사용할 수 있게된다.)
     "esModuleInterop": true, // export-import방식이 아닌 모듈에 대해서 허용...?
-    "module": "CommonJS"
+    "module": "CommonJS",
+    "moduleDetection": "force"
   },
 }
