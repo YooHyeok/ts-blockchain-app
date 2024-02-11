@@ -6,7 +6,7 @@
  * 코드가 짧아지면서 가독성이 좋아진다.
  */
 let a = "hello"
-a = 1 // Type 'number' is not assignable to type 'string' 오류 발생
+// a = 1 // Type 'number' is not assignable to type 'string' 컴파일 오류 발생
 a = "bye" // a를 string에서 string으로 초기화 했기 때문에 아무 문제가 없다.
 
 /**
@@ -23,7 +23,7 @@ let b: boolean = false // 정상 작동
  * 3. js방식의 추론적 array TypeCheck
  */
 let c = [1, 2, 3]
-c.push("1") // Type Checker에 의해 string을 number타입의 array에 추가하려 하므로 컴파일 에러 발생
+// c.push("1") // Type Checker에 의해 string을 number타입의 array에 추가하려 하므로 컴파일 에러 발생
 c.push(1)
 
 /**
@@ -34,7 +34,7 @@ c.push(1)
  * 
  */
 let c2 : number[] = []
-c2.push("1") //string을 number타입의 array에 추가하려 하므로 컴파일 에러 발생
+// c2.push("1") //string을 number타입의 array에 추가하려 하므로 컴파일 에러 발생
 c2.push(1)
 
 /**
@@ -71,7 +71,7 @@ function fetchString1(): string {
 }
 function initfetch1(){
 	c4 = [2] // any타입을 number[] 타입으로 변경
-  c4.push(fetchString1());
+  // c4.push(fetchString1()); //컴파일 에러
 }
 initfetch()
 
